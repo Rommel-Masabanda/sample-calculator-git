@@ -14,6 +14,12 @@ public class CalculatorExecute {
         int division  = (int) c.division(10,3);
         System.out.println("c.division(10,3) = " + division);
 
+        int power = c.power(5, 3);
+        System.out.println("c.power(5,3) = " + power);
+
+        double root = c.root(144, 2);
+        System.out.println("c.root(144,2) = " + root);
+
         System.out.println("____----| Finish |----____");
 
     }

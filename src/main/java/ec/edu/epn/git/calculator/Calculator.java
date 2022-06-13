@@ -25,4 +25,14 @@ public class Calculator {
     public void setAnswer(int answer) {
         this.answer = answer;
     }
+
+    public int power(int base, int exponent) {
+        return (int) Math.pow(base, exponent);
+    }
+
+    public double root(double base, int index) {
+        double index1 = 1/(double)(index);
+        //double base1 = base;
+        return Math.pow(base, index1);
+    }
 }

@@ -41,6 +41,16 @@ public class CalculatorTest {
         c.timeout(100);
     }
 
+    @Test
+    public void given_two_integers_when_power_then_ok(){
+        assertEquals(64, c.power(4, 3));
+    }
+
+    @Test
+    public void given_two_integers_when_root_then_ok(){
+        assertEquals(2, c.root(32, 5), 0);
+    }
+
     @After
     public void tearDown(){
         System.out.println("tearDown()");
